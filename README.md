@@ -37,7 +37,7 @@ graph TD
 
 **1. Clone the repository and install dependencies:**
 ```bash
-git clone https://github.com/yourusername/confidence-calibrated-rag.git
+git clone https://github.com/sj3434/confidence-calibrated-rag.git
 cd confidence-calibrated-rag
 pip install -r requirements.txt
 ```
