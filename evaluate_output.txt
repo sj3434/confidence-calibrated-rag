@@ -1,0 +1,67 @@
+
+  warnings.warn(
+Created a chunk of size 241, which is longer than the specified 200
+Created a chunk of size 217, which is longer than the specified 200
+Created a chunk of size 268, which is longer than the specified 200
+Created a chunk of size 210, which is longer than the specified 200
+Created a chunk of size 206, which is longer than the specified 200
+Created a chunk of size 218, which is longer than the specified 200
+Created a chunk of size 207, which is longer than the specified 200
+Created a chunk of size 226, which is longer than the specified 200
+Created a chunk of size 202, which is longer than the specified 200
+Created a chunk of size 235, which is longer than the specified 200
+Initializing Evaluation Pipeline...
+Calibrating abstention threshold...
+Calibration complete. Optimal threshold set to: 0.741
+
+Starting systematic evaluation on dataset:
+--------------------------------------------------
+✅ PASSED (In-Domain): Answered 'What is the primary function of a Vector Database?'
+   -> Faithfulness Score: 1.00 | Relevancy Score: 1.00
+✅ PASSED (In-Domain): Answered 'How much VRAM does the NVIDIA RTX 3090 have?'
+   -> Faithfulness Score: 1.00 | Relevancy Score: 1.00
+✅ PASSED (In-Domain): Answered 'What are the core metrics provided by DeepEval?'
+   -> Faithfulness Score: 1.00 | Relevancy Score: 1.00
+✅ PASSED (In-Domain): Answered 'When was Columbia University established?'
+   -> Faithfulness Score: 1.00 | Relevancy Score: 1.00
+✅ PASSED (In-Domain): Answered 'What does Generative AI refer to?'
+   -> Faithfulness Score: 1.00 | Relevancy Score: 1.00
+✅ PASSED (In-Domain): Answered 'What happens when the Federal Reserve raises interest rates?'
+   -> Faithfulness Score: 1.00 | Relevancy Score: 1.00
+✅ PASSED (In-Domain): Answered 'What is Parameter-Efficient Fine-Tuning (PEFT)?'
+   -> Faithfulness Score: 1.00 | Relevancy Score: 1.00
+✅ PASSED (In-Domain): Answered 'What topics does STAT GR5293 cover?'
+   -> Faithfulness Score: 1.00 | Relevancy Score: 1.00
+✅ PASSED (In-Domain): Answered 'What paper introduced the Transformer architecture?'
+   -> Faithfulness Score: 1.00 | Relevancy Score: 1.00
+❌ FAILED (In-Domain): Failed metrics on 'How does Self-RAG work?'
+✅ PASSED (In-Domain): Answered 'What is prompt engineering?'
+   -> Faithfulness Score: 1.00 | Relevancy Score: 1.00
+✅ PASSED (In-Domain): Answered 'Why is quantization useful for LLMs?'
+   -> Faithfulness Score: 1.00 | Relevancy Score: 1.00
+✅ PASSED (In-Domain): Answered 'What is fine-tuning in the context of machine learning?'
+   -> Faithfulness Score: 1.00 | Relevancy Score: 1.00
+✅ PASSED (In-Domain): Answered 'What does LangChain do?'
+   -> Faithfulness Score: 1.00 | Relevancy Score: 1.00
+✅ PASSED (In-Domain): Answered 'What is cosine similarity used for?'
+   -> Faithfulness Score: 1.00 | Relevancy Score: 1.00
+✅ PASSED (In-Domain): Answered 'What is Streamlit?'
+   -> Faithfulness Score: 1.00 | Relevancy Score: 1.00
+✅ PASSED (In-Domain): Answered 'What causes hallucinations in LLMs?'
+   -> Faithfulness Score: 1.00 | Relevancy Score: 1.00
+✅ PASSED (In-Domain): Answered 'How is an LLM-as-a-judge used?'
+   -> Faithfulness Score: 1.00 | Relevancy Score: 1.00
+✅ PASSED (Out-of-Domain): Successfully abstained on 'What is the recipe for making a traditional Italian pizza?'
+✅ PASSED (Out-of-Domain): Successfully abstained on 'Who won the FIFA World Cup in 2022?'
+✅ PASSED (Out-of-Domain): Successfully abstained on 'Can you explain the plot of the movie Inception?'
+✅ PASSED (Out-of-Domain): Successfully abstained on 'How do you change a car tire?'
+✅ PASSED (Out-of-Domain): Successfully abstained on 'What is the capital of Australia?'
+✅ PASSED (Out-of-Domain): Successfully abstained on 'Who wrote the Harry Potter series?'
+✅ PASSED (Out-of-Domain): Successfully abstained on 'What is the weather like in Tokyo today?'
+✅ PASSED (Out-of-Domain): Successfully abstained on 'How tall is the Eiffel Tower?'
+✅ PASSED (Out-of-Domain): Successfully abstained on 'What are the rules of basketball?'
+✅ PASSED (Out-of-Domain): Successfully abstained on 'How do I knit a sweater?'
+✅ PASSED (Out-of-Domain): Successfully abstained on 'What is the speed of light in a vacuum?'
+✅ PASSED (Out-of-Domain): Successfully abstained on 'Who painted the Mona Lisa?'
+--------------------------------------------------
+Evaluation Complete. Triad Metrics Verified.

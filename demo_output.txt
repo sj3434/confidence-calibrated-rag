@@ -1,0 +1,3 @@
+Initializing RAG Pipeline...
+Error initializing RAG: __init__() got an unexpected keyword argument 'threshold'
+Please ensure OPENAI_API_KEY is set in your environment.

@@ -1,0 +1,17 @@
+Initializing RAG Pipeline...
+
+==================================================
+Running mode: NAIVE RAG
+==================================================
+
+[Question] When was Columbia University founded?
+[Answer]   Columbia University was founded in 1754.
+[Context]  Top doc score: 0.862
+
+[Question] What is DeepEval?
+[Answer]   DeepEval is an open-source LLM evaluation framework that provides metrics such as Answer Relevancy, Faithfulness, and Contextual Precision to test and evaluate LLM applications programmatically.
+[Context]  Top doc score: 0.796
+
+[Question] What is the weather in New York today?
+[Answer]   I don't know.
+[Context]  Top doc score: 0.617
