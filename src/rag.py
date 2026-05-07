@@ -31,6 +31,13 @@ class ConfidenceCalibratedRAG:
             ("user", "Context:\n{context}\n\nQuestion:\n{question}")
         ])
         
+        # Naive RAG prompt: no restriction to context-only.
+        # Used when guardrails are OFF to demonstrate hallucination risk.
+        self.naive_qa_prompt = ChatPromptTemplate.from_messages([
+            ("system", "You are a helpful AI assistant. Answer the question as helpfully as possible. Use the provided context as a reference, but you may also use your general knowledge."),
+            ("user", "Context:\n{context}\n\nQuestion:\n{question}")
+        ])
+        
         self.judge_prompt = ChatPromptTemplate.from_messages([
             ("system", "You are a strict evaluation judge. Review the provided context and the question. Does the context contain sufficient information to answer the question? Reply with only 'YES' or 'NO'."),
             ("user", "Context:\n{context}\n\nQuestion:\n{question}")
@@ -90,6 +97,9 @@ class ConfidenceCalibratedRAG:
             if "NO" in judge_response.strip().upper():
                 return "I don't know (Abstained: LLM Judge deemed context insufficient)", results
             
-        qa_chain = self.qa_prompt | self.llm | StrOutputParser()
+        # Calibrated mode uses strict context-only prompt
+        # Naive mode uses permissive prompt to demonstrate hallucination risk
+        prompt = self.qa_prompt if enable_abstention else self.naive_qa_prompt
+        qa_chain = prompt | self.llm | StrOutputParser()
         answer = qa_chain.invoke({"context": context, "question": question})
         return answer, results

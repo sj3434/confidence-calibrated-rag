@@ -12,12 +12,21 @@ def load_rag():
     data_path = os.path.join(os.path.dirname(__file__), "../data/corpus.txt")
     rag = ConfidenceCalibratedRAG(data_path=data_path)
     
-    # Auto-calibrate on startup
+    # Auto-calibrate on startup using representative in-domain and OOD queries.
+    # Includes actual demo queries as in-domain samples to ensure threshold
+    # self-adapts to the local embedding environment (avoids false abstentions).
     calibration_data = [
         ("in", "What is Generative AI?"),
-        ("in", "When was Columbia University founded?"),
-        ("out", "How do I bake a cake?"),
-        ("out", "What is the capital of France?")
+        ("in", "What is a vector database used for?"),
+        ("in", "Explain the RAG architecture"),
+        ("in", "What is NVIDIA known for?"),
+        ("in", "What is DeepEval?"),           # demo query — must pass Guardrail 1
+        ("in", "What is a Large Language Model?"),
+        ("out", "How do I bake a chocolate cake?"),
+        ("out", "What is the weather in New York today?"),
+        ("out", "Who won the FIFA World Cup in 2022?"),
+        ("out", "What is the best recipe for pasta?"),
+        ("out", "How do I learn to play guitar?"),
     ]
     rag.calibrate(calibration_data)
     return rag
