@@ -4,7 +4,7 @@
 ![LangChain](https://img.shields.io/badge/LangChain-0.1.16-green.svg)
 ![DeepEval](https://img.shields.io/badge/DeepEval-CE-orange.svg)
 
-> **STAT GR5293 Generative AI using Large Language Models - Final Project**
+> **STAT GR5293 Generative AI using Large Language Models
 
 This repository contains the implementation of a **Confidence-Calibrated Retrieval-Augmented Generation (RAG)** pipeline. Unlike naive RAG systems that hallucinate when context is missing, this system is equipped with a **Dual-Layered Abstention Guardrail** that mathematically calculates confidence and uses an LLM-as-a-judge to gracefully abstain ("I don't know") on out-of-domain queries.
 
@@ -81,11 +81,7 @@ deepeval test run src/evaluate.py
 │   ├── demo.py              # Command-line interface demo
 │   ├── evaluate.py          # DeepEval CI/CE test suite
 │   └── rag.py               # Core ConfidenceCalibratedRAG class & logic
-├── Final_Report.md          # Comprehensive academic report
 ├── README.md                # This file
 └── requirements.txt         # Dependencies
 ```
 
-## 👥 Contributors
-- **Rhein** - Columbia University (STAT GR5293)
-- **Teammate** - Columbia University (STAT GR5293)
