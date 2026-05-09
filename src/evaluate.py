@@ -41,12 +41,19 @@ def test_rag_pipeline_systematically():
     eval_path = os.path.join(data_dir, "eval_dataset.json")
     
     rag = ConfidenceCalibratedRAG(data_path=corpus_path)
-    # Auto-calibrate
+    # Auto-calibrate using the same 11-query set as app.py for consistency
     calibration_data = [
         ("in", "What is Generative AI?"),
-        ("in", "When was Columbia University founded?"),
-        ("out", "How do I bake a cake?"),
-        ("out", "What is the capital of France?")
+        ("in", "What is a vector database used for?"),
+        ("in", "Explain the RAG architecture"),
+        ("in", "What is NVIDIA known for?"),
+        ("in", "What is DeepEval?"),
+        ("in", "What is a Large Language Model?"),
+        ("out", "How do I bake a chocolate cake?"),
+        ("out", "What is the weather in New York today?"),
+        ("out", "Who won the FIFA World Cup in 2022?"),
+        ("out", "What is the best recipe for pasta?"),
+        ("out", "How do I learn to play guitar?"),
     ]
     rag.calibrate(calibration_data)
     
