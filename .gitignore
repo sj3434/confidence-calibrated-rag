@@ -1,0 +1,7 @@
+.env
+.env.local
+__pycache__/
+*.pyc
+.chroma/
+.vscode/
+.DS_Store
