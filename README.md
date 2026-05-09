@@ -66,7 +66,7 @@ python src/demo.py --naive  # Runs without guardrails to demonstrate hallucinati
 We use DeepEval for continuous evaluation. To run the automated RAG Triad test suite (Faithfulness, Answer Relevancy, and Abstention Logic):
 
 ```bash
-deepeval test run src/evaluate.py
+python src/evaluate.py
 ```
 
 ## 📂 Repository Structure
