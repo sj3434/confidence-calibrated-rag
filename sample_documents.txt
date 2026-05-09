@@ -1,5 +1,0 @@
-Columbia University was founded in 1754 as King's College by royal charter of King George II of England. It is the oldest institution of higher learning in the state of New York and the fifth oldest in the United States.
-Generative AI refers to deep-learning models that can generate high-quality text, images, and other content based on the data they were trained on. Large Language Models (LLMs) like GPT-4 are examples of generative AI.
-DeepEval is an open-source LLM evaluation framework. It provides metrics such as Answer Relevancy, Faithfulness, and Contextual Precision to test and evaluate LLM applications.
-Retrieval-Augmented Generation (RAG) is an architecture that augments the capabilities of a Large Language Model (LLM) by adding an information retrieval system that provides grounding data.
-The RTX 3090 is a high-performance graphics card by NVIDIA, featuring 24 GB of GDDR6X VRAM, which makes it suitable for running local instances of LLMs.
