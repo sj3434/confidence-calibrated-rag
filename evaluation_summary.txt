@@ -1,0 +1,216 @@
+==================================================
+MODE: CALIBRATED
+==================================================
+Threshold: 0.7406
+Overall Accuracy: 29/30 (96.7%)
+In-Domain Accuracy: 17/18 (94.4%)
+OOD Abstention Rate: 12/12 (100.0%)
+OOD Hallucinated: 0/12
+Avg Faithfulness (In-Domain): 1.0
+
+Per-query results:
+  [PASS] Q1 (in-domain): sim=0.8387 judge=YES faith=1.00 rel=1.00
+    Query: What is the primary function of a Vector Database?
+  [PASS] Q2 (in-domain): sim=0.8305 judge=YES faith=1.00 rel=1.00
+    Query: How much VRAM does the NVIDIA RTX 3090 have?
+  [PASS] Q3 (in-domain): sim=0.7851 judge=YES faith=1.00 rel=1.00
+    Query: What are the core metrics provided by DeepEval?
+  [PASS] Q4 (in-domain): sim=0.8695 judge=YES faith=1.00 rel=1.00
+    Query: When was Columbia University established?
+  [PASS] Q5 (in-domain): sim=0.8813 judge=YES faith=1.00 rel=1.00
+    Query: What does Generative AI refer to?
+  [PASS] Q6 (in-domain): sim=0.8429 judge=YES faith=1.00 rel=1.00
+    Query: What happens when the Federal Reserve raises interest rates?
+  [PASS] Q7 (in-domain): sim=0.8871 judge=YES faith=1.00 rel=1.00
+    Query: What is Parameter-Efficient Fine-Tuning (PEFT)?
+  [PASS] Q8 (in-domain): sim=0.7791 judge=YES faith=1.00 rel=1.00
+    Query: What topics does STAT GR5293 cover?
+  [PASS] Q9 (in-domain): sim=0.7967 judge=YES faith=1.00 rel=1.00
+    Query: What paper introduced the Transformer architecture?
+  [FAIL] Q10 (in-domain): sim=0.8160 judge=NO
+    Query: How does Self-RAG work?
+  [PASS] Q11 (in-domain): sim=0.8329 judge=YES faith=1.00 rel=1.00
+    Query: What is prompt engineering?
+  [PASS] Q12 (in-domain): sim=0.7588 judge=YES faith=1.00 rel=1.00
+    Query: Why is quantization useful for LLMs?
+  [PASS] Q13 (in-domain): sim=0.8589 judge=YES faith=1.00 rel=1.00
+    Query: What is fine-tuning in the context of machine learning?
+  [PASS] Q14 (in-domain): sim=0.8330 judge=YES faith=1.00 rel=1.00
+    Query: What does LangChain do?
+  [PASS] Q15 (in-domain): sim=0.8710 judge=YES faith=1.00 rel=1.00
+    Query: What is cosine similarity used for?
+  [PASS] Q16 (in-domain): sim=0.8619 judge=YES faith=1.00 rel=1.00
+    Query: What is Streamlit?
+  [PASS] Q17 (in-domain): sim=0.8212 judge=YES faith=1.00 rel=1.00
+    Query: What causes hallucinations in LLMs?
+  [PASS] Q18 (in-domain): sim=0.8519 judge=YES faith=1.00 rel=1.00
+    Query: How is an LLM-as-a-judge used?
+  [PASS] Q19 (out-of-domain): sim=0.5789 judge=N/A (G1 caught)
+    Query: What is the recipe for making a traditional Italian pizza?
+  [PASS] Q20 (out-of-domain): sim=0.5965 judge=N/A (G1 caught)
+    Query: Who won the FIFA World Cup in 2022?
+  [PASS] Q21 (out-of-domain): sim=0.6499 judge=N/A (G1 caught)
+    Query: Can you explain the plot of the movie Inception?
+  [PASS] Q22 (out-of-domain): sim=0.6145 judge=N/A (G1 caught)
+    Query: How do you change a car tire?
+  [PASS] Q23 (out-of-domain): sim=0.6036 judge=N/A (G1 caught)
+    Query: What is the capital of Australia?
+  [PASS] Q24 (out-of-domain): sim=0.5895 judge=N/A (G1 caught)
+    Query: Who wrote the Harry Potter series?
+  [PASS] Q25 (out-of-domain): sim=0.5795 judge=N/A (G1 caught)
+    Query: What is the weather like in Tokyo today?
+  [PASS] Q26 (out-of-domain): sim=0.5777 judge=N/A (G1 caught)
+    Query: How tall is the Eiffel Tower?
+  [PASS] Q27 (out-of-domain): sim=0.5960 judge=N/A (G1 caught)
+    Query: What are the rules of basketball?
+  [PASS] Q28 (out-of-domain): sim=0.5983 judge=N/A (G1 caught)
+    Query: How do I knit a sweater?
+  [PASS] Q29 (out-of-domain): sim=0.5951 judge=N/A (G1 caught)
+    Query: What is the speed of light in a vacuum?
+  [PASS] Q30 (out-of-domain): sim=0.5862 judge=N/A (G1 caught)
+    Query: Who painted the Mona Lisa?
+
+==================================================
+MODE: NAIVE
+==================================================
+Threshold: 0.7406
+Overall Accuracy: 28/30 (93.3%)
+In-Domain Accuracy: 16/18 (88.9%)
+OOD Abstention Rate: 12/12 (100.0%)
+OOD Hallucinated: 0/12
+Avg Faithfulness (In-Domain): 1.0
+
+Per-query results:
+  [PASS] Q1 (in-domain): sim=0.8387 judge=N/A faith=1.00 rel=1.00
+    Query: What is the primary function of a Vector Database?
+  [PASS] Q2 (in-domain): sim=0.8304 judge=N/A faith=1.00 rel=1.00
+    Query: How much VRAM does the NVIDIA RTX 3090 have?
+  [PASS] Q3 (in-domain): sim=0.7850 judge=N/A faith=1.00 rel=1.00
+    Query: What are the core metrics provided by DeepEval?
+  [PASS] Q4 (in-domain): sim=0.8695 judge=N/A faith=1.00 rel=1.00
+    Query: When was Columbia University established?
+  [PASS] Q5 (in-domain): sim=0.8813 judge=N/A faith=1.00 rel=1.00
+    Query: What does Generative AI refer to?
+  [PASS] Q6 (in-domain): sim=0.8430 judge=N/A faith=1.00 rel=1.00
+    Query: What happens when the Federal Reserve raises interest rates?
+  [PASS] Q7 (in-domain): sim=0.8871 judge=N/A faith=1.00 rel=1.00
+    Query: What is Parameter-Efficient Fine-Tuning (PEFT)?
+  [PASS] Q8 (in-domain): sim=0.7791 judge=N/A faith=1.00 rel=0.70
+    Query: What topics does STAT GR5293 cover?
+  [PASS] Q9 (in-domain): sim=0.7967 judge=N/A faith=1.00 rel=1.00
+    Query: What paper introduced the Transformer architecture?
+  [PASS] Q10 (in-domain): sim=0.8160 judge=N/A faith=1.00 rel=1.00
+    Query: How does Self-RAG work?
+  [PASS] Q11 (in-domain): sim=0.8329 judge=N/A faith=1.00 rel=1.00
+    Query: What is prompt engineering?
+  [FAIL] Q12 (in-domain): sim=0.7588 judge=N/A
+    Query: Why is quantization useful for LLMs?
+  [PASS] Q13 (in-domain): sim=0.8589 judge=N/A faith=1.00 rel=1.00
+    Query: What is fine-tuning in the context of machine learning?
+  [PASS] Q14 (in-domain): sim=0.8330 judge=N/A faith=1.00 rel=1.00
+    Query: What does LangChain do?
+  [PASS] Q15 (in-domain): sim=0.8710 judge=N/A faith=1.00 rel=1.00
+    Query: What is cosine similarity used for?
+  [PASS] Q16 (in-domain): sim=0.8619 judge=N/A faith=1.00 rel=1.00
+    Query: What is Streamlit?
+  [FAIL] Q17 (in-domain): sim=0.8215 judge=N/A
+    Query: What causes hallucinations in LLMs?
+  [PASS] Q18 (in-domain): sim=0.8519 judge=N/A faith=1.00 rel=1.00
+    Query: How is an LLM-as-a-judge used?
+  [PASS] Q19 (out-of-domain): sim=0.5789 judge=N/A
+    Query: What is the recipe for making a traditional Italian pizza?
+  [PASS] Q20 (out-of-domain): sim=0.5965 judge=N/A
+    Query: Who won the FIFA World Cup in 2022?
+  [PASS] Q21 (out-of-domain): sim=0.6499 judge=N/A
+    Query: Can you explain the plot of the movie Inception?
+  [PASS] Q22 (out-of-domain): sim=0.6145 judge=N/A
+    Query: How do you change a car tire?
+  [PASS] Q23 (out-of-domain): sim=0.6036 judge=N/A
+    Query: What is the capital of Australia?
+  [PASS] Q24 (out-of-domain): sim=0.5895 judge=N/A
+    Query: Who wrote the Harry Potter series?
+  [PASS] Q25 (out-of-domain): sim=0.5795 judge=N/A
+    Query: What is the weather like in Tokyo today?
+  [PASS] Q26 (out-of-domain): sim=0.5777 judge=N/A
+    Query: How tall is the Eiffel Tower?
+  [PASS] Q27 (out-of-domain): sim=0.5960 judge=N/A
+    Query: What are the rules of basketball?
+  [PASS] Q28 (out-of-domain): sim=0.5983 judge=N/A
+    Query: How do I knit a sweater?
+  [PASS] Q29 (out-of-domain): sim=0.5951 judge=N/A
+    Query: What is the speed of light in a vacuum?
+  [PASS] Q30 (out-of-domain): sim=0.5862 judge=N/A
+    Query: Who painted the Mona Lisa?
+
+==================================================
+MODE: G1_ONLY
+==================================================
+Threshold: 0.7406
+Overall Accuracy: 27/30 (90.0%)
+In-Domain Accuracy: 15/18 (83.3%)
+OOD Abstention Rate: 12/12 (100.0%)
+OOD Hallucinated: 0/12
+Avg Faithfulness (In-Domain): 0.8889
+
+Per-query results:
+  [PASS] Q1 (in-domain): sim=0.8387 judge=SKIPPED faith=1.00 rel=1.00
+    Query: What is the primary function of a Vector Database?
+  [PASS] Q2 (in-domain): sim=0.8304 judge=SKIPPED faith=1.00 rel=1.00
+    Query: How much VRAM does the NVIDIA RTX 3090 have?
+  [PASS] Q3 (in-domain): sim=0.7851 judge=SKIPPED faith=1.00 rel=1.00
+    Query: What are the core metrics provided by DeepEval?
+  [PASS] Q4 (in-domain): sim=0.8695 judge=SKIPPED faith=1.00 rel=1.00
+    Query: When was Columbia University established?
+  [PASS] Q5 (in-domain): sim=0.8813 judge=SKIPPED faith=1.00 rel=1.00
+    Query: What does Generative AI refer to?
+  [PASS] Q6 (in-domain): sim=0.8429 judge=SKIPPED faith=1.00 rel=1.00
+    Query: What happens when the Federal Reserve raises interest rates?
+  [PASS] Q7 (in-domain): sim=0.8871 judge=SKIPPED faith=1.00 rel=1.00
+    Query: What is Parameter-Efficient Fine-Tuning (PEFT)?
+  [FAIL] Q8 (in-domain): sim=0.7791 judge=SKIPPED faith=1.00 rel=0.30
+    Query: What topics does STAT GR5293 cover?
+  [PASS] Q9 (in-domain): sim=0.7967 judge=SKIPPED faith=1.00 rel=1.00
+    Query: What paper introduced the Transformer architecture?
+  [PASS] Q10 (in-domain): sim=0.8160 judge=SKIPPED faith=1.00 rel=1.00
+    Query: How does Self-RAG work?
+  [PASS] Q11 (in-domain): sim=0.8329 judge=SKIPPED faith=1.00 rel=1.00
+    Query: What is prompt engineering?
+  [FAIL] Q12 (in-domain): sim=0.7588 judge=SKIPPED faith=0.00 rel=0.00
+    Query: Why is quantization useful for LLMs?
+  [PASS] Q13 (in-domain): sim=0.8589 judge=SKIPPED faith=1.00 rel=1.00
+    Query: What is fine-tuning in the context of machine learning?
+  [PASS] Q14 (in-domain): sim=0.8330 judge=SKIPPED faith=1.00 rel=1.00
+    Query: What does LangChain do?
+  [PASS] Q15 (in-domain): sim=0.8710 judge=SKIPPED faith=1.00 rel=1.00
+    Query: What is cosine similarity used for?
+  [PASS] Q16 (in-domain): sim=0.8619 judge=SKIPPED faith=1.00 rel=1.00
+    Query: What is Streamlit?
+  [FAIL] Q17 (in-domain): sim=0.8215 judge=SKIPPED faith=0.00 rel=0.10
+    Query: What causes hallucinations in LLMs?
+  [PASS] Q18 (in-domain): sim=0.8519 judge=SKIPPED faith=1.00 rel=1.00
+    Query: How is an LLM-as-a-judge used?
+  [PASS] Q19 (out-of-domain): sim=0.5789 judge=SKIPPED
+    Query: What is the recipe for making a traditional Italian pizza?
+  [PASS] Q20 (out-of-domain): sim=0.5965 judge=SKIPPED
+    Query: Who won the FIFA World Cup in 2022?
+  [PASS] Q21 (out-of-domain): sim=0.6499 judge=SKIPPED
+    Query: Can you explain the plot of the movie Inception?
+  [PASS] Q22 (out-of-domain): sim=0.6145 judge=SKIPPED
+    Query: How do you change a car tire?
+  [PASS] Q23 (out-of-domain): sim=0.6036 judge=SKIPPED
+    Query: What is the capital of Australia?
+  [PASS] Q24 (out-of-domain): sim=0.5895 judge=SKIPPED
+    Query: Who wrote the Harry Potter series?
+  [PASS] Q25 (out-of-domain): sim=0.5795 judge=SKIPPED
+    Query: What is the weather like in Tokyo today?
+  [PASS] Q26 (out-of-domain): sim=0.5777 judge=SKIPPED
+    Query: How tall is the Eiffel Tower?
+  [PASS] Q27 (out-of-domain): sim=0.5960 judge=SKIPPED
+    Query: What are the rules of basketball?
+  [PASS] Q28 (out-of-domain): sim=0.5983 judge=SKIPPED
+    Query: How do I knit a sweater?
+  [PASS] Q29 (out-of-domain): sim=0.5951 judge=SKIPPED
+    Query: What is the speed of light in a vacuum?
+  [PASS] Q30 (out-of-domain): sim=0.5862 judge=SKIPPED
+    Query: Who painted the Mona Lisa?
+
